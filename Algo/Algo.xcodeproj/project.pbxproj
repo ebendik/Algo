@@ -25,8 +25,10 @@
 /* Begin PBXFileReference section */
 		105B40A82309ECD9007ED285 /* Algo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algo; sourceTree = BUILT_PRODUCTS_DIR; };
 		105B40AB2309ECD9007ED285 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		10FE4717231DBA9800654932 /* gcd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gcd.h; sourceTree = "<group>"; };
-		10FE4718231DBEC600654932 /* prime_factorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prime_factorization.h; sourceTree = "<group>"; };
+		1074FA48232DB00200A26763 /* HeapSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeapSort.h; sourceTree = "<group>"; };
+		1074FA49232DB0F800A26763 /* InsertionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsertionSort.h; sourceTree = "<group>"; };
+		1074FA4A232DB4AF00A26763 /* PrimeFactorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrimeFactorization.h; sourceTree = "<group>"; };
+		1074FA4B232DB4BB00A26763 /* GreatestCommonDivisor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreatestCommonDivisor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +61,11 @@
 		105B40AA2309ECD9007ED285 /* Algo */ = {
 			isa = PBXGroup;
 			children = (
+				1074FA4B232DB4BB00A26763 /* GreatestCommonDivisor.h */,
+				1074FA4A232DB4AF00A26763 /* PrimeFactorization.h */,
 				105B40AB2309ECD9007ED285 /* main.cpp */,
-				10FE4717231DBA9800654932 /* gcd.h */,
-				10FE4718231DBEC600654932 /* prime_factorization.h */,
+				1074FA48232DB00200A26763 /* HeapSort.h */,
+				1074FA49232DB0F800A26763 /* InsertionSort.h */,
 			);
 			path = Algo;
 			sourceTree = "<group>";

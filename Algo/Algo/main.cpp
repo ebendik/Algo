@@ -1,11 +1,13 @@
 #include <iostream>
-#include "prime_factorization.h"
-#include "gcd.h"
+
+#include "PrimeFactorization.h"
+#include "GreatestCommonDivisor.h"
+#include "InsertionSort.h"
 
 
 void test_prime_factorization()
 {
-    auto prim_fac = prime_factorization(1560000000);
+    auto prim_fac = algo::PrimeFactorization(1560000000);
     
     for(const auto& num: prim_fac)
     {
@@ -16,13 +18,26 @@ void test_prime_factorization()
 
 void test_greatest_commond_divisor()
 {
-    std::cout << greatest_common_divisor(20, 3) << std::endl;
+    std::cout << algo::GreatestCommonDivisor(20, 3) << std::endl;
+}
+
+void test_insertion_sort()
+{
+    std::vector<int> arr{12, 3, 2, 100, 55, 34};
+    algo::InsertionSort(arr);
+    for(const auto& num: arr)
+    {
+        std::cout << num << ", ";
+    }
+    std::cout << std::endl;
+    
 }
 
 int main(int argc, const char * argv[]) {
 
 //    test_prime_factorization();
-    test_greatest_commond_divisor();
+//    test_greatest_commond_divisor();
+    test_insertion_sort();
     
     
     return 0;
