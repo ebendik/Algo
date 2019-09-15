@@ -2,14 +2,14 @@
 #include <iostream>
 
 #include "catch.hpp"
-#include "../Algo/InsertionSort.h"
+#include "../Algo/SelectionSort.h"
 
-TEST_CASE( "Test", "[InsertionSort]" )
+TEST_CASE( "Test Selection Sort" )
 {
     SECTION("non-empty array")
     {
         std::vector<int> arr { 1, 44, 3, 2, 88, 9, 100 };
-        algo::InsertionSort(arr);
+        algo::SelectionSort(arr);
         
         std::vector<int> expected_arr{arr};
         std::sort(expected_arr.begin(), expected_arr.end());
@@ -19,6 +19,6 @@ TEST_CASE( "Test", "[InsertionSort]" )
     SECTION("empty array")
     {
         std::vector<int> arr;
-        CHECK_NOTHROW(algo::InsertionSort(arr));
+        CHECK_NOTHROW(algo::SelectionSort(arr));
     }
 }

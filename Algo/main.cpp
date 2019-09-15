@@ -3,6 +3,7 @@
 #include "PrimeFactorization.h"
 #include "GreatestCommonDivisor.h"
 #include "InsertionSort.h"
+#include "SelectionSort.h"
 
 
 void test_prime_factorization()
@@ -33,11 +34,24 @@ void test_insertion_sort()
     
 }
 
+void test_selection_sort()
+{
+    std::vector<int> arr{12, 3, 2, 100, 55, 34};
+    algo::SelectionSort(arr);
+    for(const auto& num: arr)
+    {
+        std::cout << num << ", ";
+    }
+    std::cout << std::endl;
+    
+}
+
 int main(int argc, const char * argv[]) {
 
 //    test_prime_factorization();
 //    test_greatest_commond_divisor();
-    test_insertion_sort();
+//    test_insertion_sort();
+    test_selection_sort();
     
     
     return 0;
