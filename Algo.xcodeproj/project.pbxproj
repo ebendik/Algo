@@ -11,6 +11,7 @@
 		1062C76D232DCC3800E3ECD5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1062C76C232DCC3800E3ECD5 /* main.cpp */; };
 		1062C773232DCC7F00E3ECD5 /* InsertionSort_Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1062C771232DCC7F00E3ECD5 /* InsertionSort_Test.cpp */; };
 		1062C776232DCEA000E3ECD5 /* SelectionSort_Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1062C775232DCEA000E3ECD5 /* SelectionSort_Test.cpp */; };
+		107BFEE9234A9ACA0033521E /* HeapSort_Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 107BFEE8234A9ACA0033521E /* HeapSort_Test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +57,9 @@
 		1074FA49232DB0F800A26763 /* InsertionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsertionSort.h; sourceTree = "<group>"; };
 		1074FA4A232DB4AF00A26763 /* PrimeFactorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrimeFactorization.h; sourceTree = "<group>"; };
 		1074FA4B232DB4BB00A26763 /* GreatestCommonDivisor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreatestCommonDivisor.h; sourceTree = "<group>"; };
+		107BFEE7234A929C0033521E /* BucketSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BucketSort.h; sourceTree = "<group>"; };
+		107BFEE8234A9ACA0033521E /* HeapSort_Test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HeapSort_Test.cpp; sourceTree = "<group>"; };
+		107BFEEA234A9CA70033521E /* QuickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
 		10EED7D8232DB99800B21715 /* Algo_Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algo_Test; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,6 +116,8 @@
 				1074FA48232DB00200A26763 /* HeapSort.h */,
 				1074FA49232DB0F800A26763 /* InsertionSort.h */,
 				1062C774232DCDA300E3ECD5 /* SelectionSort.h */,
+				107BFEE7234A929C0033521E /* BucketSort.h */,
+				107BFEEA234A9CA70033521E /* QuickSort.h */,
 			);
 			path = Algo;
 			sourceTree = "<group>";
@@ -123,6 +129,7 @@
 				1062C771232DCC7F00E3ECD5 /* InsertionSort_Test.cpp */,
 				1062C775232DCEA000E3ECD5 /* SelectionSort_Test.cpp */,
 				1062C76C232DCC3800E3ECD5 /* main.cpp */,
+				107BFEE8234A9ACA0033521E /* HeapSort_Test.cpp */,
 			);
 			path = Algo_Test2;
 			sourceTree = "<group>";
@@ -236,6 +243,7 @@
 				1062C76D232DCC3800E3ECD5 /* main.cpp in Sources */,
 				1062C776232DCEA000E3ECD5 /* SelectionSort_Test.cpp in Sources */,
 				1062C773232DCC7F00E3ECD5 /* InsertionSort_Test.cpp in Sources */,
+				107BFEE9234A9ACA0033521E /* HeapSort_Test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
