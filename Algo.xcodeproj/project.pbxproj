@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1056AAF9234AB05800A7D6D2 /* QuickSort_Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1056AAF8234AB05800A7D6D2 /* QuickSort_Test.cpp */; };
 		105B40AC2309ECD9007ED285 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 105B40AB2309ECD9007ED285 /* main.cpp */; };
 		1062C76D232DCC3800E3ECD5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1062C76C232DCC3800E3ECD5 /* main.cpp */; };
 		1062C773232DCC7F00E3ECD5 /* InsertionSort_Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1062C771232DCC7F00E3ECD5 /* InsertionSort_Test.cpp */; };
@@ -45,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1056AAF8234AB05800A7D6D2 /* QuickSort_Test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort_Test.cpp; sourceTree = "<group>"; };
 		105B40A82309ECD9007ED285 /* Algo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algo; sourceTree = BUILT_PRODUCTS_DIR; };
 		105B40AB2309ECD9007ED285 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1062C76A232DCC3700E3ECD5 /* Algo_Test2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algo_Test2; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +132,7 @@
 				1062C775232DCEA000E3ECD5 /* SelectionSort_Test.cpp */,
 				1062C76C232DCC3800E3ECD5 /* main.cpp */,
 				107BFEE8234A9ACA0033521E /* HeapSort_Test.cpp */,
+				1056AAF8234AB05800A7D6D2 /* QuickSort_Test.cpp */,
 			);
 			path = Algo_Test2;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			files = (
 				1062C76D232DCC3800E3ECD5 /* main.cpp in Sources */,
 				1062C776232DCEA000E3ECD5 /* SelectionSort_Test.cpp in Sources */,
+				1056AAF9234AB05800A7D6D2 /* QuickSort_Test.cpp in Sources */,
 				1062C773232DCC7F00E3ECD5 /* InsertionSort_Test.cpp in Sources */,
 				107BFEE9234A9ACA0033521E /* HeapSort_Test.cpp in Sources */,
 			);

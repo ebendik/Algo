@@ -3,29 +3,30 @@
 namespace algo
 {
     template <typename T>
+    int partition(std::vector<T>& arr, int left, int right)
+    {
+        int piv = arr[right];
+        int i = left - 1;
+        for(int j = left; j < right; ++j)
+        {
+            if(arr[j] < piv)
+            {
+                ++i;
+                std::swap(arr[j], arr[i]);
+            }
+        }
+        
+        std::swap(arr[i + 1], arr[right]);
+        return i + 1;            
+    }
+
+    template <typename T>
     void sort(std::vector<T>& arr, int left, int right)
     {
         if(left >= right)
             return;
         
-        T pivot = arr[right];
-        
-        int i = left;
-        int j = left;
-        while(j < right)
-        {
-            if(arr[j] < pivot)
-            {
-                std::swap(arr[j], arr[i]);
-                ++i;
-            }
-            ++j;
-        }
-        
-        if(arr[i] < pivot)
-        {
-            std::swap(arr[i], arr[right]);
-        }
+        int i = partition(arr, left, right);
         
         sort(arr, left, i - 1);
         sort(arr, i + 1, right);
