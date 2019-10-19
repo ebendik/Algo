@@ -6,6 +6,7 @@
 #include "SelectionSort.h"
 #include "HeapSort.h"
 #include "QuickSort.h"
+#include "LeastRecentlyUsed.h"
 
 
 void test_prime_factorization()
@@ -72,6 +73,25 @@ void test_quick_sort()
     
 }
 
+void test_least_recently_used()
+{
+    LeastRecentlyUsed<char, 10> lru;
+    lru.Push(1, 'A');
+    lru.Push(2, 'B');
+    lru.Push(3, 'C');
+    lru.Push(4, 'E');
+    lru.Push(5, 'F');
+    
+    lru.Get(1);
+    lru.Get(3);
+    
+    lru.Push(1, 'G');
+    lru.Push(6, 'H');
+    lru.Push(7, 'I');
+    
+    lru.Get(4);
+}
+
 int main(int argc, const char * argv[]) {
 
 //    test_prime_factorization();
@@ -79,7 +99,8 @@ int main(int argc, const char * argv[]) {
 //    test_insertion_sort();
 //    test_selection_sort();
 //    test_heap_sort();
-    test_quick_sort();
+//    test_quick_sort();
+    test_least_recently_used();
     
     
     return 0;

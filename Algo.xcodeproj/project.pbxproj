@@ -46,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		105071B8235B85C600EB4469 /* LeastRecentlyUsed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeastRecentlyUsed.h; sourceTree = "<group>"; };
 		1056AAF8234AB05800A7D6D2 /* QuickSort_Test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort_Test.cpp; sourceTree = "<group>"; };
 		105B40A82309ECD9007ED285 /* Algo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algo; sourceTree = BUILT_PRODUCTS_DIR; };
 		105B40AB2309ECD9007ED285 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -120,6 +121,7 @@
 				1062C774232DCDA300E3ECD5 /* SelectionSort.h */,
 				107BFEE7234A929C0033521E /* BucketSort.h */,
 				107BFEEA234A9CA70033521E /* QuickSort.h */,
+				105071B8235B85C600EB4469 /* LeastRecentlyUsed.h */,
 			);
 			path = Algo;
 			sourceTree = "<group>";
@@ -197,7 +199,7 @@
 		105B40A02309ECD9007ED285 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Eugene Bendik";
 				TargetAttributes = {
 					105B40A72309ECD9007ED285 = {
@@ -217,6 +219,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 105B409F2309ECD9007ED285;
 			productRefGroup = 105B40A92309ECD9007ED285 /* Products */;
@@ -375,6 +378,7 @@
 		105B40B02309ECD9007ED285 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -383,6 +387,7 @@
 		105B40B12309ECD9007ED285 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -391,6 +396,7 @@
 		1062C76F232DCC3800E3ECD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -399,6 +405,7 @@
 		1062C770232DCC3800E3ECD5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -407,6 +414,7 @@
 		10EED7DD232DB99800B21715 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -415,6 +423,7 @@
 		10EED7DE232DB99800B21715 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
