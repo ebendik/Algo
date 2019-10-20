@@ -81,17 +81,17 @@ void test_least_recently_used()
     lru.Push(3, 'C');
     
     lru.Get(1);
-//    lru.Push(4, 'E');
-//    lru.Push(5, 'F');
-//
-//    lru.Get(1);
-//    lru.Get(3);
-//
-//    lru.Push(1, 'G');
-//    lru.Push(6, 'H');
-//    lru.Push(7, 'I');
-//
-//    lru.Get(4);
+    lru.Push(4, 'E');
+    lru.Push(5, 'F');
+
+    lru.Get(1);
+    lru.Get(3);
+
+    lru.Push(1, 'G');
+    lru.Push(6, 'H');
+    lru.Push(7, 'I');
+
+    lru.Get(4);
 }
 
 int main(int argc, const char * argv[]) {

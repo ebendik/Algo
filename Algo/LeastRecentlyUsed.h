@@ -20,9 +20,12 @@ public:
             m_cache.pop_back();
             m_lookup.erase(key);
         }
-            
-        m_cache.emplace_front(cache_kv{key, value});
-        m_lookup.insert({key, m_cache.begin()});
+        
+        auto itr = m_lookup.find(key);
+        if(itr != m_lookup.end())
+            Update(itr->second, value);
+        else
+            Insert(key, value);
     }
     
     T Get(int key)
@@ -41,6 +44,19 @@ private:
     using cache_kv = std::pair<int, T>;
     using iter = typename std::list< cache_kv >::iterator;
     
+    void Update(iter& cache_itr, const T& value)
+    {
+        cache_itr->second = value;
+        m_cache.splice(m_cache.begin(), m_cache, cache_itr);
+    }
+    
+    void Insert(int key, const T& value)
+    {
+        m_cache.emplace_front(cache_kv{key, value});
+        m_lookup.insert({key, m_cache.begin()});
+    }
+    
+private:
     std::unordered_map<int, iter> m_lookup;
     std::list< cache_kv > m_cache;
     int m_max_size;
