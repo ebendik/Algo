@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		100EF97A235CAFA7009F7732 /* LeastRecentlyUsed_Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 100EF979235CAFA7009F7732 /* LeastRecentlyUsed_Test.cpp */; };
 		1056AAF9234AB05800A7D6D2 /* QuickSort_Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1056AAF8234AB05800A7D6D2 /* QuickSort_Test.cpp */; };
 		105B40AC2309ECD9007ED285 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 105B40AB2309ECD9007ED285 /* main.cpp */; };
 		1062C76D232DCC3800E3ECD5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1062C76C232DCC3800E3ECD5 /* main.cpp */; };
@@ -46,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		100EF979235CAFA7009F7732 /* LeastRecentlyUsed_Test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LeastRecentlyUsed_Test.cpp; sourceTree = "<group>"; };
 		105071B8235B85C600EB4469 /* LeastRecentlyUsed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeastRecentlyUsed.h; sourceTree = "<group>"; };
 		1056AAF8234AB05800A7D6D2 /* QuickSort_Test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort_Test.cpp; sourceTree = "<group>"; };
 		105B40A82309ECD9007ED285 /* Algo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algo; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +134,7 @@
 				1062C772232DCC7F00E3ECD5 /* catch.hpp */,
 				1062C771232DCC7F00E3ECD5 /* InsertionSort_Test.cpp */,
 				1062C775232DCEA000E3ECD5 /* SelectionSort_Test.cpp */,
+				100EF979235CAFA7009F7732 /* LeastRecentlyUsed_Test.cpp */,
 				1062C76C232DCC3800E3ECD5 /* main.cpp */,
 				107BFEE8234A9ACA0033521E /* HeapSort_Test.cpp */,
 				1056AAF8234AB05800A7D6D2 /* QuickSort_Test.cpp */,
@@ -248,6 +251,7 @@
 			files = (
 				1062C76D232DCC3800E3ECD5 /* main.cpp in Sources */,
 				1062C776232DCEA000E3ECD5 /* SelectionSort_Test.cpp in Sources */,
+				100EF97A235CAFA7009F7732 /* LeastRecentlyUsed_Test.cpp in Sources */,
 				1056AAF9234AB05800A7D6D2 /* QuickSort_Test.cpp in Sources */,
 				1062C773232DCC7F00E3ECD5 /* InsertionSort_Test.cpp in Sources */,
 				107BFEE9234A9ACA0033521E /* HeapSort_Test.cpp in Sources */,
@@ -378,6 +382,7 @@
 		105B40B02309ECD9007ED285 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -387,6 +392,7 @@
 		105B40B12309ECD9007ED285 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,8 +403,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TEST=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -407,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -75,7 +75,7 @@ void test_quick_sort()
 
 void test_least_recently_used()
 {
-    LeastRecentlyUsed<char, 10> lru;
+    algo::LeastRecentlyUsed<char, 5> lru;
     lru.Push(1, 'A');
     lru.Push(2, 'B');
     lru.Push(3, 'C');
@@ -103,7 +103,6 @@ int main(int argc, const char * argv[]) {
 //    test_heap_sort();
 //    test_quick_sort();
     test_least_recently_used();
-    
     
     return 0;
 }
